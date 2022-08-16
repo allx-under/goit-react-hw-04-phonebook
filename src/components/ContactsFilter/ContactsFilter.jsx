@@ -1,20 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import Button from 'components/Button/Button';
 
-class ContactsFilter extends Component {
-  render() {
-    const { filter, onChange } = this.props;
-    return (
-      <Wrapper>
-        <StyledLabel>Find contacts by name</StyledLabel>
-        <input name="filter" onChange={onChange} value={filter} />
-      </Wrapper>
-    );
-  }
-}
+const ContactsFilter = ({ filter, onChange }) => {
+  return (
+    <Wrapper>
+      <StyledLabel>Find contacts by name</StyledLabel>
+      <input name="filter" onChange={onChange} value={filter} />
+    </Wrapper>
+  );
+};
 
 export default ContactsFilter;
 

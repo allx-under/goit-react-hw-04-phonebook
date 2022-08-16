@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
-class Button extends Component {
-  render() {
-    return <StyledBtn type="submit">Add contact</StyledBtn>;
-  }
-}
+const Button = () => {
+  return <StyledBtn type="submit">Add contact</StyledBtn>;
+};
 
 export default Button;
 
